@@ -5,6 +5,8 @@
 
 # dotenv files
 .env
+
+# secret files
 appsettings.json
 
 # User-specific files
