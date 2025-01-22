@@ -6,6 +6,10 @@
 # dotenv files
 .env
 
+# db files
+dating.db-shm
+dating.db-wal
+
 # secret files
 appsettings.json
 
