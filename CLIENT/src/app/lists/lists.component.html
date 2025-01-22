@@ -29,10 +29,27 @@
     </div>
     
     <div class="row mt-3">
-        @for (member of members; track member.id) {
+        @for (member of likeService.paginatedResult()?.items; track member.id) {
             <div class="col-2">
                 <app-member-card [member]="member"></app-member-card>
             </div>
         }
     </div>
 </div>
+
+@if (likeService.paginatedResult()?.pagination) {
+    <div class="d-flex justify-content-center">
+        <pagination 
+            [boundaryLinks]="true" 
+            [totalItems]="likeService.paginatedResult()?.pagination!.totalItems"
+            [itemsPerPage]="likeService.paginatedResult()?.pagination!.itemsPerPage"
+            (pageChanged)="pageChanged($event)"
+            [(ngModel)] = "likeService.paginatedResult()?.pagination!.currentPage"
+            [maxSize]="10"
+            previousText="&lsaquo;" 
+            nextText="&rsaquo;" 
+            firstText="&laquo;" 
+            lastText="&raquo;">
+        </pagination>
+    </div>
+}
