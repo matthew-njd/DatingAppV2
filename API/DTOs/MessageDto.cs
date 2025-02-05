@@ -8,7 +8,7 @@ namespace API.DTOs
         public required string SenderPhotoUrl { get; set; }
         public int RecipientId { get; set; }
         public required string RecipientUsername { get; set; }
-        public required string RecipientPhotUrl { get; set; }
+        public required string RecipientPhotoUrl { get; set; }
         public required string Content { get; set; }
         public DateTime? DateRead { get; set; }
         public DateTime MessageSent { get; set; }
