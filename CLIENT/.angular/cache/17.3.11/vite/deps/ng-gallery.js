@@ -1,13 +1,13 @@
 import {
+  DomSanitizer
+} from "./chunk-ENQI4QFW.js";
+import "./chunk-RK54QVL3.js";
+import {
   animate,
   style,
   transition,
   trigger
 } from "./chunk-IFZTOPC4.js";
-import {
-  DomSanitizer
-} from "./chunk-ENQI4QFW.js";
-import "./chunk-RK54QVL3.js";
 import {
   AsyncPipe,
   CommonModule,

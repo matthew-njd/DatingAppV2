@@ -1,14 +1,14 @@
 import {
+  DomSanitizer
+} from "./chunk-ENQI4QFW.js";
+import "./chunk-RK54QVL3.js";
+import {
   animate,
   state,
   style,
   transition,
   trigger
 } from "./chunk-IFZTOPC4.js";
-import {
-  DomSanitizer
-} from "./chunk-ENQI4QFW.js";
-import "./chunk-RK54QVL3.js";
 import {
   DOCUMENT,
   NgIf
